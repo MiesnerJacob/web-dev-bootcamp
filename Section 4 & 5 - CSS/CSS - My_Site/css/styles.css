@@ -1,3 +1,32 @@
 body {
-  background-color: blue;
+  background-color: white;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#top-div {
+  background-color: lightblue;
+  margin: 1%;
+  height: 200px;
+  width: 200px;
+}
+
+#middle-div {
+  background-color: red;
+  margin: 1%;
+  height: 200px;
+  width: 200px;
+}
+
+#lower-div {
+  background-color: yellow;
+  margin: 1%;
+  height: 200px;
+  width: 200px;
 }
