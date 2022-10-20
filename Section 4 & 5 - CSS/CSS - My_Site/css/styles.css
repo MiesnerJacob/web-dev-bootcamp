@@ -4,6 +4,7 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  text-align: center;
 }
 
 h1 {
@@ -12,21 +13,37 @@ h1 {
 
 #top-div {
   background-color: lightblue;
-  margin: 1%;
-  height: 200px;
-  width: 200px;
+  margin: 0%;
+  position: relative;
+  padding: 100px;
 }
 
 #middle-div {
   background-color: red;
-  margin: 1%;
+  margin: 0%;
   height: 200px;
   width: 200px;
 }
 
 #lower-div {
   background-color: yellow;
-  margin: 1%;
+  margin: 0%;
   height: 200px;
   width: 200px;
+}
+
+#pro {
+  text-decoration: underline;
+}
+
+#top-cloud {
+  position: absolute;
+  right: 450px;
+  top: 50px;
+}
+
+#bottom-cloud {
+  position: absolute;
+  left: 450px;
+  top: 200px;
 }
