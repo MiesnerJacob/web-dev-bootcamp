@@ -4,20 +4,59 @@
 <head>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/x-icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/facebook/327/cityscape_1f3d9-fe0f.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+Warang+Citi&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <title>Jacob Miesner</title>
 </head>
 
 <body>
-  <div id ="top-div">
-  <img id="top-cloud" src="images/cloud.png" alt="cloud">
-  <h1>Hi, I am Jacob</h1>
-  <p>a <span id ="pro">pro</span>grammer</p>
-  <img id="bottom-cloud" src="images/cloud.png" alt="cloud">
-  <img src="images/mountain.png" alt="cloud">
+  <div id="top-div">
+    <img id="top-cloud" src="images/cloud.png" alt="cloud">
+    <h1>I'm Jacob</h1>
+    <h2>a <span id="pro">pro</span>grammer</h2>
+    <img id="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img id="mountain" src="images/mountain.png" alt="cloud">
   </div>
-  <div id="middle-div"></div>
-  <div id="lower-div"></div>
+  <div id="middle-div">
+    <div class="profile">
+      <img src="images/jacob.jpeg" alt="Jacob Miesner's Profile Picture" id="pfp">
+      <h2>Hello!</h2>
+      <p id="intro-description"> My name is Jacob Miesner. I am a Businessman, Data Scientist, and Programmer.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills</h2>
+      <div class="skill-row">
+        <img id="ceo" src="images/ceo.png">
+        <h3>Professional</h3>
+        <p>I am a cross-functional leader to chooses to lead by example.</p>
+      </div>
+      <br>
+      <div class="skill-row">
+        <img id="code" src="images/code.png">
+        <h3>Programming</h3>
+        <p>I have extensive experience taking abstract ideas and turning them into revenue generating products.</p>
+      </div>
+      <br>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Feel free to send me an email.</h3>
+      <p id="contact-me">I love to hear feedback on my work, and hear of new opportunities.</p>
+      <a class="btn" href="mailto:miesner.jacob@email.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div id="lower-div">
+    <a class="footer-link" href="https://www.linkedin.com/in/jacob-miesner-885050125/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/MiesnerJacob">Github</a>
+    <p id="copyright">© Jacob Miesner 2022</p>
+  </div>
+
 </body>
 
 </html>
