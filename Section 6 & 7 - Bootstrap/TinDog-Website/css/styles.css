@@ -78,3 +78,33 @@ h1 {
 .features-icon:hover {
   color: #FF4C68;
 }
+
+/* Testimonials */
+#testimonials {
+  height: 600px;
+  background-color: #FF4C68;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#carouselControls {
+  padding: 7% 15%;
+}
+
+.testimonials-image {
+  height: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Press */
+#press {
+  background-color: #FF4C68;
+  text-align: center;
+}
+
+.press-logo {
+  width 15%;
+  margin: 20px 20px 50px;
+}
