@@ -18,6 +18,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3a39f0c819.js" crossorigin="anonymous"></script>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -39,9 +42,10 @@
   <!-- Nav Section -->
   <section id="#nav">
     <div class="container-fluid">
-      <nav class="navbar navbar-custom navbar-expand-lg">
+      <nav class="navbar fixed-top navbar-custom navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Bad Pug Brewing</a>
+          <img class="navbar-logo" src="images/navbar-logo.png" alt="Bad Pug Brewing Company Alternative Logo">
+          <a class="navbar-brand" href="#">Bad Pug Brewing Co.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,9 +71,9 @@
   </section>
 
   <!-- Title Section -->
-  <section id="#title">
+  <section id="title">
     <div class="container-fluid color-theme">
-      <div class="row">
+      <div class="row title-row">
         <div class="col-lg-6 col-md-6 col-sm-12 my-auto">
           <h1 class="company-title">Bad Pug</h1>
           <h2 class="company-description"> Brewing Company</h2>
@@ -83,40 +87,140 @@
   </section>
 
   <!-- Product Section -->
-  <section id="#products">
-    <div class="container-fluid white-theme">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <h2 class="product">Our brews</h2>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 title-col">
-        <img class="product-logo" src="images/peanut-pilsner.jpg" alt="Bad Pug Brewing logo">
-        <h2>Peanut Pilsner</h2>
-        <p class="product-description">A delicious beer brewed at our Headquarters. Made in small batches.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 title-col">
-        <img class="product-logo" src="images/grumby-pale-ale.jpg" alt="Bad Pug Brewing logo">
-        <h2>Grumby Pale Ale</h2>
-        <p class="product-description">A delicious beer brewed at our Headquarters. Made in small batches.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 title-col">
-        <img class="product-logo" src="images/shooketh-saison.png" alt="Bad Pug Brewing logo">
-        <h2>Shooketh Saison</h2>
-        <p class="product-description">A delicious beer brewed at our Headquarters. Made in small batches.</p>
-      </div>
+  <section id="products" class="product-cards">
+    <h2 class="product">Our brews</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <div class="card d-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/peanut-pilsner.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Peanut Pilsner</h2>
+                <p class="product-description">A light and airy beer, sweet and citrus filled.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/grumby-pale-ale.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Grumby Pale Ale</h2>
+                <p class="product-description">A classic take on a hoppy Pale Ale. A fan favorite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/shooketh-saison.png" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Shooketh Saison</h2>
+                <p class="product-description">A bitter beer that is a part of our new experimental batch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/crazy-lager.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Crazy Lager</h2>
+                <p class="product-description">A beer for those time that you feel a bit crazy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/mohawk-malt.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Mohawk Malt</h2>
+                <p class="product-description">A punk rock beer dedicated to the most hardcore pugs out there.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/judgemental-ny-pale-ale.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Judgemental NY Pale Ale</h2>
+                <p class="product-description">A small batch brew from our Headquarters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/pineapple-seltzer.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Pineapple Seltzer</h2>
+                <p class="product-description">Our first seltzer! It is sweet and aromatic and hawaiin inspired.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/toady-summer-ale.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Toady Summer Ale</h2>
+                <p class="product-description">A light beer perfect for a hot summer day. Nothing beats a summer ale.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card d-none d-md-block col-lg-4 col-md-4 col-sm-4">
+              <img class="product-logo" src="images/beastie-ipa.jpg" alt="Bad Pug Brewing logo">
+              <div class="card-body">
+                <h2>Beastie IPA</h2>
+                <p class="product-description">Our most famous brew.  Rich and bold in its hoppy taste.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="#about">
+  <section id="about">
     <div class="container-fluid color-theme">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 my-auto">
-          <h2 class="product-title">About us</h2>
-          <p class="about-text">Bad Pug Brewing is a fictional beer company centered around the emotions of a pug. The pug is sucha a unique dog with a giant perinsality fit into a small package. To honor these little creatures we have created Bad Pug Brewing which features multiple creaft beers dedicated to the quirks of pugs, each being named after one of their emotions.</p>
+      <div class="row about-row">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-auto mx-auto">
+          <h2>About us</h2>
+          <p class="about-text">Bad Pug Brewing is a fictional beer company centered around the emotions of a pug. Pugs are a unique breed with a giant perinsality fit into a small package. To honor these little creatures we have created Bad Pug Brewing which features multiple creaft beers dedicated to the quirks of pugs.</p>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <img class="about-pic" src="images/tasting-room.jpeg" alt="Picture of a tasting room">
         </div>
       </div>
@@ -124,19 +228,33 @@
   </section>
 
   <!-- Contact Us Section -->
-  <section id="#contact">
-    <div class="container-fluid">
-      Hello5
-    </div>
+  <section id="contact">
+    <div class="container-fluid grey-theme">
+      <div class="row contact-row">
+        <div class="col-lg-12 col-md-12 col-sm-12 my-auto">
+          <p class="contact-text">Send us an email. We love feedback from our clientele!</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 my-auto">
+          <a class="btn btn-light" href="mailto:miesner.jacob@gmail.com">Contact Us</a>
+        </div>
+      </div>
   </section>
 
   <!-- Footer -->
-  <section id="#footer">
-    <div class="container-fluid">
-      Hello6
+  <section id="footer">
+    <div class="container-fluid footer-container white-theme">
+      <i class="fa-sharp fa-solid fa-brands fa-twitter fa-1x footer-icon"></i>
+      <i class="fa-sharp fa-solid fa-brands fa-facebook fa-1x footer-icon"></i>
+      <i class="fa-sharp fa-solid fa-brands fa-instagram fa-1x footer-icon"></i>
+      <i class="fa-sharp fa-solid fa-envelope fa-1x footer-icon"></i>
+      <p>© Copyright Bad Pug Brewing Company</p>
     </div>
   </section>
 
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
