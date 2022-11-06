@@ -12,9 +12,9 @@ document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber
 
 // Change heading to indicate which player won
 if (randomNumberOne == randomNumberTwo) {
-    document.querySelector("h1").textContent = "Draw..."
+    document.querySelector("h2").textContent = "Draw..."
 } else if (randomNumberOne > randomNumberTwo) {
-  document.querySelector("h1").textContent = "🚩 Player 1 wins!"
+  document.querySelector("h2").textContent = "🚩 Player 1 wins!"
 } else {
-  document.querySelector("h1").textContent = "Player 2 wins! 🚩"
+  document.querySelector("h2").textContent = "Player 2 wins! 🚩"
 }
