@@ -101,6 +101,12 @@ p {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 800px) {
+  .company-logo {
+    height: 300px;
+  }
+}
+
 .established {
   font-size: 1.5rem;
   font-weight: 900;
@@ -181,6 +187,12 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-pic {
+    height: 200px;
+  }
 }
 
 .about-text {
