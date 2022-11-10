@@ -72,11 +72,29 @@ p {
   margin-top: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+  .title-row {
+    padding-bottom: 50px;
+  }
+}
+
 .company-title {
+    color: #d08701;
+    font-size: 11.5rem;
+    font-weight: 900;
+    font-family: 'Bebas Neue';
+    margin: 0% auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .company-title {
+    padding-top: 50px;
     color: #d08701;
     font-size: 7.5rem;
     font-weight: 900;
     font-family: 'Bebas Neue';
+    margin: 0% auto;
+  }
 }
 
 .company-description
@@ -85,6 +103,7 @@ p {
     font-size: 3.5rem;
     font-weight: 900;
     font-family: 'Lobster', cursive;
+    margin: 0% auto 1% auto;
 }
 
 .company-logo {

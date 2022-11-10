@@ -1,4 +1,4 @@
-BMI Calculator function with varies return values
+// BMI Calculator function with varies return values
 
 function bmiCalculator (weight, height) {
     var bmi = weight / (height * height);
