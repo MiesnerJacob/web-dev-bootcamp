@@ -1,0 +1,15 @@
+This is a text file with some notes about APIs.
+
+An API endpoint is a path to a function behind an API that returns some values with a specified input.
+
+In the case of our example API this is the endpoint for gathering a joke:
+https://v2.jokeapi.dev/joke/Any
+
+Although this API has many paths for this endpoint to gather different types of jokes:
+https://v2.jokeapi.dev/joke/Programming
+
+In order to specify a parameter than modifies our output we need to use the question mark char:
+https://v2.jokeapi.dev/joke/Programming?type=single
+
+An in order to use multiple parameters we must separate them using an ampersand:
+https://v2.jokeapi.dev/joke/Programming?type=single&contains=Machine%20learning
