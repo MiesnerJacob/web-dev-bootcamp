@@ -5,7 +5,9 @@ const https = require('node:https');
 const bodyParser = require('body-parser');
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + '/index.html')
@@ -13,12 +15,16 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {
 
-  const cityName = req.body.cityName
-  const app_key = "bcd866658285e7a11a5436bcb97ab673#"
-  const api_url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + app_key
+  const cityName = req.body.cityName;
+  const app_key = "bcd866658285e7a11a5436bcb97ab673#";
+  const api_url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + app_key;
 
   https.get(api_url, function(response) {
     console.log(response.statusCode);
+    if (response.statusCode === 404) {
+      res.status(404).send("City not found. Please enter a valid city name.");
+      return;
+    }
 
     response.on("data", function(data) {
       const weatherData = JSON.parse(data)
