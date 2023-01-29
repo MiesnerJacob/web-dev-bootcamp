@@ -1,0 +1,8 @@
+This module is all about Git, Github, and Code Versioning. The videos in this module covered the following topics:
+
+* Local vs Remote Repositories
+* Basic Git commands
+* Git Ignore file
+* Cloning Repos
+* Branching and Merging
+* Forking and Pull Requests

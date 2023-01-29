@@ -1,0 +1,1 @@
+This is my example for the first chapter of a short story. This short story will allow me to showcase my git and code versioning skills!
