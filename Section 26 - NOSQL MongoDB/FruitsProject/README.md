@@ -1,0 +1,1 @@
+This project is intended to show usage of the MongoDB Native Driver for NodeJS. In the next module we will use Mongoose to make our lives a bit easier.
