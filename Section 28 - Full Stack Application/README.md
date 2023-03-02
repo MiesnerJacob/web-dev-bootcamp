@@ -1,0 +1,1 @@
+This project is intended to showcase a suite of skills including HTML, CSS, vanilla JS, EJS, NodeJS, all in conjunction with mongoDB to create a full-stack to do list application.
