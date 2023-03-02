@@ -1,0 +1,1 @@
+This project is intended to showcase a suite of skills including HTML, CSS, vanilla JS, EJS, NodeJS, all in conjunction with mongoDB to create a full-stack to-do list application. This version is a copy of the project from the last module that also includes the ability to deploy the application to be cloud-hosted via Heroku and MongoDB Atlas.
