@@ -20,7 +20,7 @@ app.use(express.static("public"));
 mongoose.set('strictQuery', true);
 
 // Changed our database connection to access MongoDB Atlas (cloud) as opposed to a MongoDB instance hosted locally
-mongoose.connect('mongodb+srv://miesnerjacob:GBlXTdodaMKyk7cK@cluster0.o59upgk.mongodb.net/todolistDB');;
+mongoose.connect('mongodb+srv://miesnerjacob:<password>@cluster0.o59upgk.mongodb.net/todolistDB');;
 
 // Create schema
 const itemSchema = new mongoose.Schema({
