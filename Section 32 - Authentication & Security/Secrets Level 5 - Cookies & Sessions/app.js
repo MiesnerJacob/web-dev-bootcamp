@@ -30,22 +30,13 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Create connection, db
-mongoose.set('strictQuery', true);
-
 // Connect to local MongoDB instance
 mongoose.connect('mongodb://localhost:27017/usersDB', { useNewUrlParser: true });
 
 // Create schema
 const userSchema = new mongoose.Schema({
-    username: {
-      type: String,
-      required: [true, 'Username required.']
-    },
-    password: {
-      type: String,
-      required: [true, 'Password required.']
-    }
+    username: {type: String},
+    password: {type: String}
   });
 
 userSchema.plugin(passportLocalMongoose);
@@ -70,24 +61,31 @@ app.get("/register", function(req, res) {
     res.render("register");
 });
 
+app.get("/secrets", function(req, res) {
+  if (req.isAuthenticated()) {
+    res.render("secrets");
+  } else {
+    res.redirect("/login");
+  }
+});
+
 // Register Post for Creating a user
 app.post("/register", function(req, res) {
-    console.log(req.body);
-    const username = req.body.username;
-    const password = req.body.password;
-    
-    User.register({username: username}, password, function(err, user) {
-      if (err) {
-        console.log(err);
-        res.redirect("/register");
-      } else {
-        console.log(user); // Log the user object to the console
-        passport.authenticate("local")(req, res, function(){
-          res.redirect("/secrets");
-        });
-      }
-    });
+
+  form_username = req.body.username;
+  form_password = req.body.password;
+
+  User.register({username:form_username, active: false}, form_password, function(err, user) {
+    if (err) {
+      console.log(err);
+      res.redirect("/register");
+    } else {
+      passport.authenticate("local") (req, res, function() {
+        res.redirect("/secrets");
+      });
+    }
   });
+});
   
   
 
@@ -98,13 +96,30 @@ app.get("/login", function(req, res) {
 
 // Login Post for validating user info
 app.post("/login", function(req, res) {
+  
+  const user =  new User({
+    username: req.body.username,
+    password: req.body.password
+  });
 
+  req.login(user, function(err) {
+    if (err) {
+      console.log(err);
+      } else {
+        passport.authenticate("local")(req, res, function(){
+          res.redirect("/secrets");
+        });
+      }
+  });
 });
 
 // Render home page when Logout is submitted
 app.get("/logout", function(req, res) {
-    res.render("home");
+  req.logout(function() {
+    res.redirect("/");
+  });
 });
+
 
 // Have app launch of port 3000
 app.listen(3000, function () {
