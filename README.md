@@ -1,5 +1,7 @@
 # web-dev-bootcamp
 
-Over the past 4 years, I have embarked on a journey to become a Data Scientist. Through this experience, I have taken many courses, completed many projects, and built features and production, ML models. 
+Over the past 4 years, I have been on a journey to become a Data Scientist, during which I have taken numerous courses, completed multiple projects, and developed features and production-level ML models.
 
-In the next career phase, I would like to be a more well-rounded programmer with a complete understanding of front-end web dev, back-end dev, etc. This beginner Web development course will be the start of my journey to becoming a Full Stack Developer who also has Data Science skills (statistical methods, machine learning modeling & deployment).
+As I move into the next phase of my career, I aim to become a more well-rounded programmer with a comprehensive understanding of front-end and back-end web development. This beginner web development course marks the beginning of my journey to become a Full Stack Developer who also possesses data science skills, including expertise in statistical methods, machine learning modeling, and deployment.
+
+I am excited to acquire new skills and leverage my existing expertise to build end-to-end solutions that solve complex problems. Follow me on this exciting journey as I develop new projects and explore the intersection of data science and full-stack development.
